@@ -1,4 +1,4 @@
-public class Driver {
+public class Driver extends User {
     public int id;
     public String name;
     public String vehicleType;
@@ -41,5 +41,8 @@ public class Driver {
         if(location==trip.getPickupLocation()){
             System.out.println(name + " started the trip.");
         }
+    }
+    public double calculateRating(){
+        return rating;
     }
 }

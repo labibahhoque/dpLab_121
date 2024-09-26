@@ -1,4 +1,4 @@
-public class Rider {
+public class Rider extends User {
     private int id;
     private String name;
     private String location;
@@ -24,5 +24,8 @@ public class Rider {
     }
     public void updateRating(double newRating) {
         rating = (rating + newRating) / 2;
+    }
+    public double calculateRating(){
+        return rating;
     }
 }
